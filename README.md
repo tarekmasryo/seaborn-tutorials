@@ -50,6 +50,7 @@ No external downloads needed!
 Clone the repo and open the notebook:
 
 ```bash
-git clone https://github.com/tarekmasryo/Seaborn-Beginner-to-Pro-Clean-EDA-Guide
-cd seaborn-beginner-to-pro
+git clone https://github.com/tarekmasryo/seaborn-tutorials
+cd seaborn-tutorials
 jupyter notebook seaborn-beginner-to-pro-clean-eda-guide.ipynb
+
