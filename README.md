@@ -69,4 +69,4 @@ Open the notebook and run top-to-bottom in:
 
 ## 🧾 Case Study
 
-See: **CASE_STUDY.md** (project story + key decisions, without repeated run steps).
+See: **CASE_STUDY.md** (project story + key decisions).
