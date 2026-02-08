@@ -7,3 +7,38 @@ __pycache__/
 env/
 venv/
 ENV/
+# ===== Level B (No Overkill) =====
+
+# Python / venv
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data & artifacts (keep folders via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+
+artifacts/*
+!artifacts/.gitkeep
+
+# Outputs
+reports/
+outputs/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.html

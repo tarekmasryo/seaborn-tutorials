@@ -1,56 +1,72 @@
-# 📊 Seaborn — Beginner-to-Pro 🎯
+# 📊 Seaborn — Beginner-to-Pro (EDA Reference) 🎯
 
-A practical, opinionated reference for **Exploratory Data Analysis (EDA)** with [Seaborn](https://seaborn.pydata.org/).  
-We start from **beginner basics** → **intermediate customization** → **advanced patterns**.
-
----
-
-## 🚀 Why this notebook?
-- Clean, modular examples you can drop into real projects.  
-- Short cells + clear plots = easy to follow.  
-- Covers both **theory tips** (when to use what) and **hands-on code**.  
-- Ends with a **compact EDA pipeline** you can reuse on Kaggle datasets.
+A practical notebook for **Exploratory Data Analysis (EDA)** with Seaborn: beginner basics → customization → advanced patterns.
 
 ---
 
-## 📂 Datasets Used
-All datasets are **built-in Seaborn samples**:
-- `tips`  
-- `penguins`  
-- `flights`  
-- `iris`  
-- `titanic`  
+## ✅ What’s inside
 
-No external downloads needed!
+- 🧭 Clean, modular examples you can reuse in real projects  
+- 🧱 A compact EDA mini-pipeline (Titanic)  
+- 🧩 Version-safe snippets (Seaborn 0.11 vs 0.12+)  
+- 📁 Lightweight repo layout (`data/raw`, `artifacts`) for optional extensions
 
 ---
 
-## 📖 Notebook Outline
-1. **Setup & Theme Helpers** – reproducible, consistent visuals.  
-2. **Beginner Plots** – histograms, KDE, countplot, bar vs. pointplot, scatter, line.  
-3. **Intermediate Customization** – hue/style/size, facet grids, themes, matplotlib interop.  
-4. **Advanced Patterns** – pairplot, jointplot, regression fits, ECDF, hexbin, correlation heatmaps.  
-5. **Quick Gallery** – one-shot overview of multiple plots.  
-6. **EDA Mini-Pipeline** – compact workflow on Titanic dataset (missingness, categorical vs numeric relations).  
-7. **Best Practices & Pitfalls** – what to avoid + pro tips.  
-8. **Cheat Sheet** – minimal examples with common gotchas.
+## 🖼️ Example plots
+
+- Distribution with histogram + KDE
+- FacetGrid of penguins by island × sex
+- Pairplot of Iris dataset
+- Hexbin for dense scatter clouds
+- Correlation heatmap with upper-triangle mask
 
 ---
 
-## 🖼️ Example Plots
-- Distribution with histogram + KDE.  
-- FacetGrid of penguins by island × sex.  
-- Pairplot of Iris dataset.  
-- Hexbin for dense scatter clouds.  
-- Correlation heatmap with upper-triangle mask.  
+## 📂 Data
+
+This notebook uses **Seaborn built-in sample datasets**:
+- `tips`, `penguins`, `flights`, `iris`, `titanic`
+
+Note: `sns.load_dataset()` may need internet on first run (dataset download).  
+If you want to run fully offline, place your own CSV under `data/raw/`.
 
 ---
 
-## ⚡ Quick Start
-Clone the repo and open the notebook:
+## 📁 Repo layout
+
+```text
+.
+├── seaborn-beginner-to-pro-clean-eda-guide.ipynb
+├── data/
+│   └── raw/               # optional local datasets (kept out of git)
+├── artifacts/             # optional exported figures / outputs
+├── repo_utils/
+│   └── pathing.py         # local + Kaggle path helpers (optional)
+├── CASE_STUDY.md
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🚀 Run locally
 
 ```bash
-git clone https://github.com/tarekmasryo/seaborn-tutorials
-cd seaborn-tutorials
-jupyter notebook seaborn-beginner-to-pro-clean-eda-guide.ipynb
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
 
+pip install -r requirements.txt
+```
+
+Open the notebook and run top-to-bottom in:
+- Jupyter / JupyterLab
+- VS Code notebooks
+
+---
+
+## 🧾 Case Study
+
+See: **CASE_STUDY.md** (project story + key decisions, without repeated run steps).
