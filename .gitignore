@@ -1,19 +1,17 @@
+# Python
 __pycache__/
-.ipynb_checkpoints/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 .Python
-env/
-venv/
-ENV/
-# ===== Level B (No Overkill) =====
 
-# Python / venv
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
+
+# Environment files
 .env
 .env.*
 
@@ -27,16 +25,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Data & artifacts (keep folders via .gitkeep)
-data/raw/*
-!data/raw/.gitkeep
-
-artifacts/*
-!artifacts/.gitkeep
-
-# Outputs
-reports/
+# Local outputs
+artifacts/
 outputs/
+reports/
 *.png
 *.jpg
 *.jpeg

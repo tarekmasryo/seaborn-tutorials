@@ -1,44 +1,73 @@
-# 🧠 Case Study — Seaborn Beginner-to-Pro (EDA Reference)
+# 🧠 Case Study — Seaborn Beginner-to-Pro
 
 ## Problem
-Build a practical, reusable reference for **Exploratory Data Analysis (EDA)** with Seaborn that:
-- teaches plot selection (what to use, when)
-- shows clean, copy-pasteable patterns
-- stays readable as a single notebook
+
+Build a practical Seaborn reference that helps readers move from basic plots to stronger exploratory data analysis decisions.
+
+The notebook is designed for learners who already know basic Python and want a reusable visual EDA playbook rather than a long API catalog.
+
+---
+
+## Goals
+
+- Teach plot selection through small, readable examples
+- Keep each cell focused on one visual idea
+- Show when to use distributions, comparisons, relationships, facets, density views, and heatmaps
+- Include realistic EDA cautions such as overplotting, misleading scales, unstable means, and target-mirror leakage
+- Keep the notebook lightweight enough to run on Kaggle or locally
 
 ---
 
 ## Data
-- **Source:** Seaborn built-in sample datasets via `sns.load_dataset()`
-- **Examples:** `tips`, `penguins`, `flights`, `iris`, `titanic`
-- **Note:** `sns.load_dataset()` may require internet on first run (Seaborn dataset download).
+
+The notebook uses Seaborn built-in sample datasets:
+
+- `tips`
+- `penguins`
+- `flights`
+- `iris`
+- `titanic`
+
+These datasets are intentionally small, familiar, and suitable for visual explanation.
 
 ---
 
 ## Approach
-- **Setup first:** consistent theme helpers + deterministic seed
-- **Progression:** beginner → intermediate customization → advanced patterns
-- **Patterns:** FacetGrid, pairplot/jointplot, regression fits, ECDF, hexbin, correlation heatmap
-- **Mini-pipeline:** compact Titanic EDA workflow (missingness + numeric/categorical relationships)
+
+The notebook is organized as a progression:
+
+1. Setup and theme helpers
+2. Beginner plots for distributions, counts, summaries, scatter, and line charts
+3. Intermediate customization with hue, style, size, facets, palettes, and axes control
+4. Advanced patterns such as pairplots, jointplots, regression helpers, ECDFs, hexbin density, and masked heatmaps
+5. A compact Titanic EDA mini-pipeline
+6. Best-practice notes and a final cheat sheet
 
 ---
 
-## Results
-- A single notebook that acts as a **visual EDA playbook**
-- Reusable helper functions for:
-  - theming
-  - quick dataframe overview
-  - plot templates with safe version handling (Seaborn 0.11 vs 0.12+)
+## Key decisions
+
+- **One notebook:** easier to read, run, and share on Kaggle/GitHub
+- **Short cells:** each visual pattern is easy to copy and adapt
+- **Small datasets:** fast execution and lower cognitive load
+- **Version-aware code:** helper logic handles Seaborn `ci` vs `errorbar` differences
+- **EDA-first framing:** the goal is visual understanding, not model training
 
 ---
 
-## Decisions & Takeaways
-- Keep everything in **one notebook** to reduce friction for readers.
-- Prefer **short cells** and “one idea per plot” examples.
-- Include version guards where Seaborn API differs (e.g., `ci` vs `errorbar`).
+## Practical value
+
+This notebook can be used as:
+
+- a learning reference for Seaborn
+- a quick visual EDA checklist
+- a reusable source of plotting snippets
+- a portfolio artifact showing clean exploratory analysis structure
 
 ---
 
-## Next Steps
-- Add an optional section for loading a local CSV from `data/raw/` using `repo_utils/pathing.py`.
-- Export a small gallery of plots into `artifacts/` for quick preview in the README.
+## Publishing notes
+
+The notebook uses `sns.load_dataset(...)`, so internet access should be enabled when running from scratch.
+
+For GitHub, the notebook is kept at the repository root for easy preview. For Kaggle, the same notebook can be uploaded and run directly.

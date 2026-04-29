@@ -1,5 +1,6 @@
-numpy
-pandas
-matplotlib
-seaborn
-ipython
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.12
+ipython>=8.0
+jupyter>=1.0
