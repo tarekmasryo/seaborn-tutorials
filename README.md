@@ -106,3 +106,11 @@ The goal is not to memorize every Seaborn function. The goal is to build judgmen
 ## 🧾 Case study
 
 See [`CASE_STUDY.md`](CASE_STUDY.md) for the project story, design decisions, and publishing notes.
+
+
+
+## 📄 License
+
+MIT License. See [`LICENSE`](LICENSE) for details.
+
+Copyright © Tarek Masryo.
